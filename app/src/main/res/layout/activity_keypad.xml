@@ -1,0 +1,171 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="uk.co.slingshoteffect.keypadterminal_v1.KeypadActivity">
+
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:columnCount="7"
+    android:orientation="horizontal"
+    android:textSize="@dimen/font_size"
+    android:background="#000000"
+    tools:context=".KeypadActivity"
+    android:paddingTop="130dp">
+
+
+
+
+    <Button
+        android:text="1"
+        android:layout_row="2"
+        android:onClick="sendDigit1"
+        style="@style/key_style"
+        />/>
+    <Button
+        android:text="2"
+        android:onClick="sendDigit2"
+        style="@style/key_style"/>/>
+    <Button
+        android:text="3"
+        android:onClick="sendDigit3"
+        style="@style/key_style"
+        />/>
+    <Button
+        android:text="a"
+        android:onClick="sendDigita"
+        style="@style/key_style"/>/>
+    <Button
+        android:text="b"
+        android:onClick="sendDigitb"
+        style="@style/key_style"/>/>
+
+    <Button
+        android:text="Clear"
+        style="@style/key_style"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill"
+
+        android:onClick="sendDigitclear"
+        />/>
+    <Button
+        android:text="4"
+        android:layout_column="1"
+        android:onClick="sendDigit4"
+        style="@style/key_style"/>/>
+    <Button
+        android:text="5"
+        android:onClick="sendDigit5"
+        style="@style/key_style"/>/>
+    <Button
+        android:text="6"
+        android:onClick="sendDigit6"
+        style="@style/key_style"/>/>
+    <Button
+        android:text="c"
+        android:onClick="sendDigitc"
+        style="@style/key_style"/>/>
+    <Button
+        android:text="d"
+        android:onClick="sendDigitd"
+        style="@style/key_style"/>/>
+    <Button
+        android:text="7"
+        android:layout_column="1"
+
+        android:onClick="sendDigit7"
+        style="@style/key_style"/>/>
+    <Button
+        android:text="8"
+        android:onClick="sendDigit8"
+        style="@style/key_style"/>/>
+    <Button
+        android:text="9"
+        android:onClick="sendDigit9"
+        style="@style/key_style"/>
+
+    <Button
+        android:text="e"
+        android:onClick="sendDigite"
+        style="@style/key_style"/>
+    <Button
+        android:text="f"
+        android:onClick="sendDigitf"
+        style="@style/key_style"/>
+    <Button
+        android:text="0"
+        android:layout_column="0"
+        android:layout_row="5"
+        android:onClick="sendDigit0"
+        style="@style/key_style"
+        />
+    <Button
+        android:text="+"
+        android:onClick="sendDigitPlus1"
+        style="@style/key_style"
+        />
+    <Button
+        android:text="+"
+        android:onClick="sendDigitPlus1"
+        style="@style/key_style"
+        />
+    <Button
+        android:text="+"
+        android:onClick="sendDigitPlus1"
+        style="@style/key_style"
+        />
+    <Button
+        android:text="#"
+        android:onClick="sendDigitHash"
+        style="@style/key_style"
+        />
+    <Button
+
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill"
+        android:text="Enter"
+        android:onClick="sendDigitenter"
+        style="@style/key_style"/>
+
+
+</GridLayout>
+
+
+    <ImageView
+        android:layout_width="176dp"
+        android:layout_height="169dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="left|top"
+        android:src="@drawable/logo1"
+        android:padding="12dp"
+        android:layout_margin="21dp"/>
+
+        <FrameLayout
+            android:layout_width="900dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center_horizontal|right|top"
+            android:background="#009EE2"
+
+            android:paddingRight="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="80dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/start_instructions"
+                android:id="@+id/main_message"
+                android:layout_gravity="center_vertical|right"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:padding="20dp" />
+        </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,120 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="uk.co.slingshoteffect.keypadterminal_v1.gridRefFS">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        android:gravity="center"
+         />
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="#000000"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="1158dp"
+            android:layout_height="580dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_weight="80"
+            style="@style/frame_style">
+            <!-- GRID REFERENCE -->
+            <FrameLayout
+
+                style="@style/panel_style"
+                android:layout_width="wrap_content"
+                android:layout_weight="40"
+                android:layout_height="fill_parent"
+                android:id="@+id/ref_panel">
+                <TextView
+                    style="@style/gr_text"
+                    android:id="@+id/GR_display"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VOID"
+                    />
+                
+                </FrameLayout>
+            <!-- ADDRESS-->
+            <FrameLayout
+
+                style="@style/panel_style"
+                android:layout_width="400dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="50"
+                android:id="@+id/address_panel"
+                >
+                <TextView
+                    style="@style/ad_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/AD_display"
+                    android:text="VOID"
+                    />
+
+            </FrameLayout>
+
+
+            </LinearLayout>
+    </FrameLayout>
+    <ImageView
+        android:layout_width="176dp"
+        android:layout_height="169dp"
+        android:id="@+id/imageView2"
+        android:layout_gravity="left|top"
+        android:src="@drawable/logo1"
+        android:padding="12dp"
+        android:layout_margin="21dp" />
+    <FrameLayout
+        android:layout_width="910dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center_horizontal|right|top"
+        android:background="#009EE2"
+
+        android:paddingRight="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="80dp">
+
+        <TextView
+            android:layout_width="720dp"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/welcome_pt1"
+            android:id="@+id/main_message"
+            android:layout_gravity="center_vertical|right"
+            android:textColor="#ffffff"
+            android:textSize="40dp"
+            android:padding="20dp" />
+
+
+    </FrameLayout>
+
+
+</FrameLayout>

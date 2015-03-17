@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="uk.co.slingshoteffect.keypadterminal_v1" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".KeypadActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".holdDown"
+            android:label="@string/title_activity_hold_down" >
+        </activity>
+        <activity
+            android:name=".WarningScreen"
+            android:label="@string/title_activity_warning_screen" >
+        </activity>
+        <activity
+            android:name=".touchTest"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_touch_test"
+            android:theme="@style/FullscreenTheme" >
+        </activity>
+        <activity
+            android:name=".gridRefFS"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_grid_ref_fs"
+            >
+        </activity>
+        <activity
+            android:name=".AdminInterface"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_admin_interface"
+             >
+        </activity>
+        <activity
+            android:name=".AdminInterface2"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_admin_interface2"
+             >
+        </activity>
+    </application>
+
+</manifest>

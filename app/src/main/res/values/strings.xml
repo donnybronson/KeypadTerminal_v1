@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">KeypadTerminal_v1</string>
+    <string name="sharPref1">uk.co.slingshoteffect.sharepref1</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_hold_down">holdDown</string>
+    <string name="title_activity_warning_screen">WarningScreen</string>
+    <string name="warning_message">ACCESS DENIED\nYOUR CODE WAS NOT RECOGNIZED </string>
+    <string name="hold_me1">Please hold the screen \nFor </string>
+    <string name="hold_me2"> seconds to unlock</string>
+    <string name="myZone">1</string>
+    <string name="zone_1_code">111</string>
+    <string name="admin_code">0000</string>
+    <string name="gridRefDefault">gg13</string>
+    <string name="addressDefault">Home</string>
+    <string name="timeoutDefault">5</string>
+    <string name="passcode1Default">5555</string>
+    <string name="passcode2Default">1234</string>
+    <string name="terminalModeDefault">single</string>
+    <string name="adminDefaultText">bof</string>
+
+
+<!-- touch test strings  -->
+    <string name="title_activity_touch_test">touchTest</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">HOLD FOR 5 SECONDS\nTO ACTIVATE TERMINAL</string>
+    <string name="lockScreen_message1">Welcome back Dr Warren</string>
+    <string name="lockScreen_message2">Your log in history is time locked</string>
+    <string name="lockScreen_message3">Please hold the screen for </string>
+    <string name="lockScreen_message4"> seconds to unlock</string>
+
+
+
+    <string name="grid_ref_zone1">gg13</string>
+    <string name="address_zone1">This is the address\nThis is the address line 2</string>
+
+    <string name="grid_ref_zone2">void</string>
+    <string name="address_zone2">void</string>
+
+    <string name="grid_ref_zone3">void</string>
+    <string name="address_zone3">void</string>
+
+    <string name="title_activity_grid_ref_fs">gridRefFS</string>
+    <string name="start_instructions">Enter Personal Recognition Code to continue </string>
+    <string name="dr_name">Dr Jones</string>
+    <string name="welcome_pt1">Welcome back</string>
+
+    <string name="lock_instructions">This terminal is admin locked to Dr Clive. Please enter your code Dr Clive</string>
+
+
+    <string name="title_activity_admin_interface">AdminInterface</string>
+    <string name="title_activity_admin_page">AdminPage</string>
+
+    <string name="title_activity_admin_interface2">AdminInterface2</string>
+
+
+
+</resources>
